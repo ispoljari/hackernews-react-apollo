@@ -20,21 +20,6 @@ var models = [
 exports.Prisma = prisma_lib_1.makePrismaClientClass({
   typeDefs,
   models,
-  endpoint: ``,
-  secret: `mysecret123`
+  endpoint: `https://eu1.prisma.sh/ivan-spoljaric-f08419/server/dev`
 });
 exports.prisma = new exports.Prisma();
-var models = [
-  {
-    name: "Link",
-    embedded: false
-  },
-  {
-    name: "User",
-    embedded: false
-  },
-  {
-    name: "Vote",
-    embedded: false
-  }
-];
